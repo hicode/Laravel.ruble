@@ -1,22 +1,22 @@
 require 'ruble'
 
 bundle do |bundle|
-  bundle.display_name = 'laravle.ruble'
-  bundle.author = 'My Name'
+  bundle.display_name = 'Laravel'
+  bundle.author = 'laravel.cc@china::xiehai'
   bundle.copyright = <<END
-(c) Copyright 2011 sample.org. Distributed under MIT license.
+(c) Copyright 2011 laravel.cc. Distributed under MIT license.
 END
 
   bundle.description = <<END
-Sample description
+Laravel 4 Ruble
 END
 
   # uncomment with the url to the git repo if one exists
-  # bundle.repository = 'git@github.com:username/repo-name.git'
+  bundle.repository = 'git@github.com:hicode/Laravel.ruble.git'
 
   # Use Commands > Bundle Development > Insert Bundle Section > Menu
   # to easily add new sections
-  bundle.menu 'laravle.ruble' do |menu|
+  bundle.menu 'laravel.ruble' do |menu|
     menu.command 'Swap Case'
     menu.command 'Sample Snippet'
     menu.separator
