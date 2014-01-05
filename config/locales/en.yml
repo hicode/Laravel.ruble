@@ -1,3 +1,4 @@
 en:
   bundle_name: 'Laravel'
+  php_artisan_migrate: "php artisan migrate"
   
