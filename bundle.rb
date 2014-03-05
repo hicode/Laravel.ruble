@@ -77,8 +77,66 @@ bundle t(:bundle_name) do |bundle|
       
       submenu.separator
       
-      submenu.menu t(:Schema) do |submenu2|
-            submenu2.command t(:php_artisan_migrate)
+      submenu.menu t(:Schema) do |schema_menu|
+            schema_menu.command 'Schema::create'
+            schema_menu.command 'Schema::connection'
+            schema_menu.command 'Schema::rename'
+            schema_menu.command 'Schema::drop'
+            schema_menu.command 'Schema::dropIfExists'
+            schema_menu.command 'Schema::hasTable'
+            schema_menu.command 'Schema::hasColumn'
+            schema_menu.command 'Schema::table'
+            
+            schema_menu.separator
+            
+            schema_menu.command '$table->renameColumn'
+            schema_menu.command '$table->engine = \'InnoDB\''
+			schema_menu.command '$table->dropColumn'
+			
+			schema_menu.separator
+			
+			schema_menu.menu t('Adding Columns') do |schema_menu_1|
+			
+				schema_menu_1.command '$table->increments(\'id\')'
+	            schema_menu_1.command '$table->bigIncrements(\'id\')'
+				schema_menu_1.command '$table->string(\'...\')'
+				schema_menu_1.command '$table->string(\'...\', 255)'
+				schema_menu_1.command '$table->integer(\'...\')'
+				schema_menu_1.command '$table->bigInteger(\'...\')'
+				schema_menu_1.command '$table->smallInteger(\'...\')'
+				schema_menu_1.command '$table->float(\'...\')'
+				schema_menu_1.command '$table->double(\'...\', 15, 8)'
+				schema_menu_1.command '$table->decimal(\'...\', 5, 2)'
+				schema_menu_1.command '$table->boolean(\'...\')'
+				schema_menu_1.command '$table->date(\'...\')'
+				schema_menu_1.command '$table->time(\'...\')'
+				schema_menu_1.command '$table->dateTime(\'...\')'
+				schema_menu_1.command '$table->timestamp(\'...\')'
+				schema_menu_1.command '$table->timestamp()'
+				schema_menu_1.command '$table->softDeleted()'
+				schema_menu_1.command '$table->text(\'...\')'
+				schema_menu_1.command '$table->binary(\'...\')'
+				schema_menu_1.command '$table->enum(\'...\')'
+				
+				schema_menu_1.separator
+				
+				schema_menu_1.command 'nullable()'
+				schema_menu_1.command 'default(\'...\')'
+				schema_menu_1.command 'unsigned()'
+			end
+			
+			schema_menu.menu t('Adding Indexs') do |schema_menu_1|
+			
+				schema_menu_1.command '$table->primary(\'id\')'
+	            schema_menu_1.command '$table->primary(array())'
+				schema_menu_1.command '$table->unique(\'...\')'
+				schema_menu_1.command '$table->index(\'...\')'
+				
+			end
+			
+			schema_menu.separator
+			
+			schema_menu.command 'Go to Schame Handbook'
       end
       
       submenu.menu t(:Database) do |submenu2|
@@ -139,7 +197,7 @@ bundle t(:bundle_name) do |bundle|
             submenu2.command t(:php_artisan_migrate)
       end
       
-      submenu.menu t(:The_Remote_Component) do |submenu2|
+      submenu.menu t('远程组件') do |submenu2|
             submenu2.command t(:php_artisan_migrate)
       end
       

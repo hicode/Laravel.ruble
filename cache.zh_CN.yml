@@ -4,163 +4,338 @@ children:
 - !command
   async: false
   customProperties: null
-  displayName: Swap Case
-  input: [selection, word]
+  displayName: php artisan migrate
+  input: []
   inputPath: null
-  keyBindingMap: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+F10]
   outputPath: null
-  outputType: replace_selection
-  path: commands\commands.rb
+  outputType: discard
+  path: commands\artisan.rb
   runType: current_thread
   scope: source
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.SnippetElement
-  async: false
-  category: null
-  customProperties:
-    prefix_values: [':route.get']
-  description: null
-  displayName: Route::get('', function(){})
-  expansion: "\nRoute::get('${1:uri}', function()\n{\n\t${2:\\/\\/code}\n});"
-  iconPath: null
-  input: [none]
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: insert_as_snippet
-  path: snippets\snippets.rb
-  runType: current_thread
-  scope: null
-  tags: []
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.SnippetElement
-  async: false
-  category: null
-  customProperties:
-    prefix_values: [':route.post']
-  description: null
-  displayName: Route::post('', function(){})
-  expansion: "\nRoute::post('${1:uri}', function()\n{\n\t${2:\\/\\/code}\n});"
-  iconPath: null
-  input: [none]
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: insert_as_snippet
-  path: snippets\snippets.rb
-  runType: current_thread
-  scope: null
-  tags: []
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.SnippetElement
-  async: false
-  category: null
-  customProperties:
-    prefix_values: [':route.any']
-  description: null
-  displayName: Route::any('', function(){})
-  expansion: "\nRoute::any('${1:uri}', function()\n{\n\t${2:\\/\\/code}\n});"
-  iconPath: null
-  input: [none]
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: insert_as_snippet
-  path: snippets\snippets.rb
-  runType: current_thread
-  scope: null
-  tags: []
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.SnippetElement
-  async: false
-  category: null
-  customProperties:
-    prefix_values: [':route.filter']
-  description: null
-  displayName: Route::filter('', function(){})
-  expansion: "\nRoute::filter('${1:uri}', function()\n{\n\t${2:\\/\\/code}\n});"
-  iconPath: null
-  input: [none]
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: insert_as_snippet
-  path: snippets\snippets.rb
-  runType: current_thread
-  scope: null
-  tags: []
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.SnippetElement
-  async: false
-  category: null
-  customProperties:
-    prefix_values: [':route.group']
-  description: null
-  displayName: Route::group('', function(){})
-  expansion: "\nRoute::group('${1:uri}', function()\n{\n\t${2:\\/\\/code}\n});"
-  iconPath: null
-  input: [none]
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: insert_as_snippet
-  path: snippets\snippets.rb
-  runType: current_thread
-  scope: null
-  tags: []
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.SnippetElement
-  async: false
-  category: null
-  customProperties:
-    prefix_values: [':route.where']
-  description: null
-  displayName: ->where('', '')
-  expansion: ->where(${1:param},${2:regular})
-  iconPath: null
-  input: [none]
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: insert_as_snippet
-  path: snippets\snippets.rb
-  runType: current_thread
-  scope: null
-  tags: []
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.SnippetElement
-  async: false
-  category: null
-  customProperties:
-    prefix_values: [':function']
-  description: null
-  displayName: tpl_function
-  expansion: "${1:public/private/protected} function ${2:funcName}(${3:$param}) {\n\
-    \t\\/\\/code on here\n}"
-  iconPath: null
-  input: [none]
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: insert_as_snippet
-  path: snippets\snippets.rb
-  runType: current_thread
-  scope: null
-  tags: []
-  workingDirectoryType: UNDEFINED
-- !template
+- !command
   async: false
   customProperties: null
-  displayName: Sample File Template
-  filetype: '*.txt'
+  displayName: dump_db_to_schema
   input: []
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+F10]
+  outputPath: null
+  outputType: discard
+  path: commands\artisan.rb
+  runType: current_thread
+  scope: source
+  workingDirectoryType: UNDEFINED
+- !command
+  async: false
+  customProperties: null
+  displayName: load_schema
+  input: []
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+F10]
+  outputPath: null
+  outputType: discard
+  path: commands\artisan.rb
+  runType: current_thread
+  scope: source
+  workingDirectoryType: UNDEFINED
+- !command
+  async: false
+  customProperties: null
+  displayName: load_fixtures_test
+  input: []
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+F10]
+  outputPath: null
+  outputType: discard
+  path: commands\artisan.rb
+  runType: current_thread
+  scope: source
+  workingDirectoryType: UNDEFINED
+- !command
+  async: false
+  customProperties: null
+  displayName: load_fixtures_development
+  input: []
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+F10]
+  outputPath: null
+  outputType: discard
+  path: commands\artisan.rb
+  runType: current_thread
+  scope: source
+  workingDirectoryType: UNDEFINED
+- !command
+  async: false
+  customProperties: null
+  displayName: migrate_to_previous_version
+  input: []
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+F10]
+  outputPath: null
+  outputType: discard
+  path: commands\artisan.rb
+  runType: current_thread
+  scope: source
+  workingDirectoryType: UNDEFINED
+- !command
+  async: false
+  customProperties: null
+  displayName: migrate_to_current
+  input: []
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+F10]
+  outputPath: null
+  outputType: discard
+  path: commands\artisan.rb
+  runType: current_thread
+  scope: source
+  workingDirectoryType: UNDEFINED
+- !command
+  async: false
+  customProperties: null
+  displayName: redo_last_migration
+  input: []
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+F10]
+  outputPath: null
+  outputType: discard
+  path: commands\artisan.rb
+  runType: current_thread
+  scope: source
+  workingDirectoryType: UNDEFINED
+- !command
+  async: false
+  customProperties:
+    prefix_values: [mcol]
+  displayName: add_remove_column
+  input: [selection]
   inputPath: null
   keyBindingMap: null
   outputPath: null
-  outputType: discard
-  path: templates\templates.rb
+  outputType: insert_as_snippet
+  path: commands\artisan.rb
   runType: current_thread
-  scope: null
+  scope: source.ruby.rails
+  workingDirectoryType: UNDEFINED
+- !command
+  async: false
+  customProperties:
+    prefix_values: [mind]
+  displayName: add_remove_index
+  input: [selection]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: commands\artisan.rb
+  runType: current_thread
+  scope: source.ruby.rails
+  workingDirectoryType: UNDEFINED
+- !command
+  async: false
+  customProperties:
+    prefix_values: [mind]
+  displayName: add_remove_named_index
+  input: [selection]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: commands\artisan.rb
+  runType: current_thread
+  scope: source.ruby.rails
+  workingDirectoryType: UNDEFINED
+- !command
+  async: false
+  customProperties:
+    prefix_values: [marcc]
+  displayName: add_remove_several_columns_1
+  input: [selection]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: commands\artisan.rb
+  runType: current_thread
+  scope: source.ruby.rails
+  workingDirectoryType: UNDEFINED
+- !command
+  async: false
+  customProperties:
+    prefix_values: [mcol]
+  displayName: add_remove_several_columns
+  input: [selection]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: commands\artisan.rb
+  runType: current_thread
+  scope: source.ruby.rails
+  workingDirectoryType: UNDEFINED
+- !command
+  async: false
+  customProperties:
+    prefix_values: [mcol]
+  displayName: add_remove_timestamps
+  input: [selection]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: commands\artisan.rb
+  runType: current_thread
+  scope: source.ruby.rails
+  workingDirectoryType: UNDEFINED
+- !command
+  async: false
+  customProperties:
+    prefix_values: [mind]
+  displayName: add_remove_unique_index
+  input: [selection]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: commands\artisan.rb
+  runType: current_thread
+  scope: source.ruby.rails
+  workingDirectoryType: UNDEFINED
+- !command
+  async: false
+  customProperties:
+    prefix_values: [mtab]
+  displayName: change_table
+  input: [selection]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: commands\artisan.rb
+  runType: current_thread
+  scope: source.ruby.rails
+  workingDirectoryType: UNDEFINED
+- !command
+  async: false
+  customProperties:
+    prefix_values: [mcol]
+  displayName: change_column_default
+  input: [selection]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: commands\artisan.rb
+  runType: current_thread
+  scope: source.ruby.rails
+  workingDirectoryType: UNDEFINED
+- !command
+  async: false
+  customProperties:
+    prefix_values: [mcol]
+  displayName: change_column
+  input: [selection]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: commands\artisan.rb
+  runType: current_thread
+  scope: source.ruby.rails
+  workingDirectoryType: UNDEFINED
+- !command
+  async: false
+  customProperties:
+    prefix_values: [mtab]
+  displayName: create_drop_table
+  input: [selection]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: commands\artisan.rb
+  runType: current_thread
+  scope: source.ruby.rails
+  workingDirectoryType: UNDEFINED
+- !command
+  async: false
+  customProperties:
+    prefix_values: [mcol]
+  displayName: remove_add_timestamps
+  input: [selection]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: commands\artisan.rb
+  runType: current_thread
+  scope: source.ruby.rails
+  workingDirectoryType: UNDEFINED
+- !command
+  async: false
+  customProperties:
+    prefix_values: [mncc]
+  displayName: rename_several_columns_1
+  input: [selection]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: commands\artisan.rb
+  runType: current_thread
+  scope: source.ruby.rails
+  workingDirectoryType: UNDEFINED
+- !command
+  async: false
+  customProperties:
+    prefix_values: [mcol]
+  displayName: rename_several_columns
+  input: [selection]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: commands\artisan.rb
+  runType: current_thread
+  scope: source.ruby.rails
+  workingDirectoryType: UNDEFINED
+- !command
+  async: false
+  customProperties:
+    prefix_values: [mcol]
+  displayName: rename_column
+  input: [selection]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: commands\artisan.rb
+  runType: current_thread
+  scope: source.ruby.rails
+  workingDirectoryType: UNDEFINED
+- !command
+  async: false
+  customProperties:
+    prefix_values: [mtab]
+  displayName: rename_table
+  input: [selection]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: commands\artisan.rb
+  runType: current_thread
+  scope: source.ruby.rails
   workingDirectoryType: UNDEFINED
 - !command
   async: false
@@ -175,17 +350,6 @@ children:
   runType: current_thread
   scope: source
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.ProjectSampleElement
-  category: com.aptana.projects.samples.web.category
-  customProperties: null
-  description: A basic project sample
-  displayName: Project Sample Example
-  icon: {}
-  id: sample.local
-  location: samples/local_sample.zip
-  natures: [com.aptana.projects.webnature]
-  path: samples\project_samples.rb
-  scope: null
 - !!com.aptana.scripting.model.SnippetElement
   async: false
   category: null
@@ -346,342 +510,17 @@ children:
   scope: null
   tags: &id001 []
   type: WEB
-- !!com.aptana.scripting.model.CommandElement
-  async: false
+- !!com.aptana.scripting.model.ProjectSampleElement
+  category: com.aptana.projects.samples.web.category
   customProperties: null
-  displayName: php_artisan_migrate
-  input: []
-  inputPath: null
-  keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+F10]
-  outputPath: null
-  outputType: discard
-  path: commands\artisan.rb
-  runType: current_thread
-  scope: source
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
-  async: false
-  customProperties: null
-  displayName: dump_db_to_schema
-  input: []
-  inputPath: null
-  keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+F10]
-  outputPath: null
-  outputType: discard
-  path: commands\artisan.rb
-  runType: current_thread
-  scope: source
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
-  async: false
-  customProperties: null
-  displayName: load_schema
-  input: []
-  inputPath: null
-  keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+F10]
-  outputPath: null
-  outputType: discard
-  path: commands\artisan.rb
-  runType: current_thread
-  scope: source
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
-  async: false
-  customProperties: null
-  displayName: load_fixtures_test
-  input: []
-  inputPath: null
-  keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+F10]
-  outputPath: null
-  outputType: discard
-  path: commands\artisan.rb
-  runType: current_thread
-  scope: source
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
-  async: false
-  customProperties: null
-  displayName: load_fixtures_development
-  input: []
-  inputPath: null
-  keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+F10]
-  outputPath: null
-  outputType: discard
-  path: commands\artisan.rb
-  runType: current_thread
-  scope: source
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
-  async: false
-  customProperties: null
-  displayName: migrate_to_previous_version
-  input: []
-  inputPath: null
-  keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+F10]
-  outputPath: null
-  outputType: discard
-  path: commands\artisan.rb
-  runType: current_thread
-  scope: source
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
-  async: false
-  customProperties: null
-  displayName: migrate_to_current
-  input: []
-  inputPath: null
-  keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+F10]
-  outputPath: null
-  outputType: discard
-  path: commands\artisan.rb
-  runType: current_thread
-  scope: source
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
-  async: false
-  customProperties: null
-  displayName: redo_last_migration
-  input: []
-  inputPath: null
-  keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+F10]
-  outputPath: null
-  outputType: discard
-  path: commands\artisan.rb
-  runType: current_thread
-  scope: source
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
-  async: false
-  customProperties:
-    prefix_values: [mcol]
-  displayName: add_remove_column
-  input: [selection]
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: insert_as_snippet
-  path: commands\artisan.rb
-  runType: current_thread
-  scope: source.ruby.rails
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
-  async: false
-  customProperties:
-    prefix_values: [mind]
-  displayName: add_remove_index
-  input: [selection]
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: insert_as_snippet
-  path: commands\artisan.rb
-  runType: current_thread
-  scope: source.ruby.rails
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
-  async: false
-  customProperties:
-    prefix_values: [mind]
-  displayName: add_remove_named_index
-  input: [selection]
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: insert_as_snippet
-  path: commands\artisan.rb
-  runType: current_thread
-  scope: source.ruby.rails
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
-  async: false
-  customProperties:
-    prefix_values: [marcc]
-  displayName: add_remove_several_columns_1
-  input: [selection]
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: insert_as_snippet
-  path: commands\artisan.rb
-  runType: current_thread
-  scope: source.ruby.rails
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
-  async: false
-  customProperties:
-    prefix_values: [mcol]
-  displayName: add_remove_several_columns
-  input: [selection]
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: insert_as_snippet
-  path: commands\artisan.rb
-  runType: current_thread
-  scope: source.ruby.rails
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
-  async: false
-  customProperties:
-    prefix_values: [mcol]
-  displayName: add_remove_timestamps
-  input: [selection]
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: insert_as_snippet
-  path: commands\artisan.rb
-  runType: current_thread
-  scope: source.ruby.rails
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
-  async: false
-  customProperties:
-    prefix_values: [mind]
-  displayName: add_remove_unique_index
-  input: [selection]
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: insert_as_snippet
-  path: commands\artisan.rb
-  runType: current_thread
-  scope: source.ruby.rails
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
-  async: false
-  customProperties:
-    prefix_values: [mtab]
-  displayName: change_table
-  input: [selection]
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: insert_as_snippet
-  path: commands\artisan.rb
-  runType: current_thread
-  scope: source.ruby.rails
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
-  async: false
-  customProperties:
-    prefix_values: [mcol]
-  displayName: change_column_default
-  input: [selection]
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: insert_as_snippet
-  path: commands\artisan.rb
-  runType: current_thread
-  scope: source.ruby.rails
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
-  async: false
-  customProperties:
-    prefix_values: [mcol]
-  displayName: change_column
-  input: [selection]
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: insert_as_snippet
-  path: commands\artisan.rb
-  runType: current_thread
-  scope: source.ruby.rails
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
-  async: false
-  customProperties:
-    prefix_values: [mtab]
-  displayName: create_drop_table
-  input: [selection]
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: insert_as_snippet
-  path: commands\artisan.rb
-  runType: current_thread
-  scope: source.ruby.rails
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
-  async: false
-  customProperties:
-    prefix_values: [mcol]
-  displayName: remove_add_timestamps
-  input: [selection]
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: insert_as_snippet
-  path: commands\artisan.rb
-  runType: current_thread
-  scope: source.ruby.rails
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
-  async: false
-  customProperties:
-    prefix_values: [mncc]
-  displayName: rename_several_columns_1
-  input: [selection]
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: insert_as_snippet
-  path: commands\artisan.rb
-  runType: current_thread
-  scope: source.ruby.rails
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
-  async: false
-  customProperties:
-    prefix_values: [mcol]
-  displayName: rename_several_columns
-  input: [selection]
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: insert_as_snippet
-  path: commands\artisan.rb
-  runType: current_thread
-  scope: source.ruby.rails
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
-  async: false
-  customProperties:
-    prefix_values: [mcol]
-  displayName: rename_column
-  input: [selection]
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: insert_as_snippet
-  path: commands\artisan.rb
-  runType: current_thread
-  scope: source.ruby.rails
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
-  async: false
-  customProperties:
-    prefix_values: [mtab]
-  displayName: rename_table
-  input: [selection]
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: insert_as_snippet
-  path: commands\artisan.rb
-  runType: current_thread
-  scope: source.ruby.rails
-  workingDirectoryType: UNDEFINED
+  description: A basic project sample
+  displayName: Project Sample Example
+  icon: {}
+  id: sample.local
+  location: samples/local_sample.zip
+  natures: [com.aptana.projects.webnature]
+  path: samples\project_samples.rb
+  scope: null
 - !!com.aptana.scripting.model.MenuElement
   children:
   - children:
@@ -848,9 +687,273 @@ children:
     scope: null
   - children:
     - children: *id001
-      commandName: php artisan migrate
+      commandName: Schema::create
       customProperties: null
-      displayName: php artisan migrate
+      displayName: Schema::create
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Schema::connection
+      customProperties: null
+      displayName: Schema::connection
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Schema::rename
+      customProperties: null
+      displayName: Schema::rename
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Schema::drop
+      customProperties: null
+      displayName: Schema::drop
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Schema::dropIfExists
+      customProperties: null
+      displayName: Schema::dropIfExists
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Schema::hasTable
+      customProperties: null
+      displayName: Schema::hasTable
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Schema::hasColumn
+      customProperties: null
+      displayName: Schema::hasColumn
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Schema::table
+      customProperties: null
+      displayName: Schema::table
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: '-'
+      customProperties: null
+      displayName: '-'
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: $table->renameColumn
+      customProperties: null
+      displayName: $table->renameColumn
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: $table->engine = 'InnoDB'
+      customProperties: null
+      displayName: $table->engine = 'InnoDB'
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: $table->dropColumn
+      customProperties: null
+      displayName: $table->dropColumn
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: '-'
+      customProperties: null
+      displayName: '-'
+      path: bundle.rb
+      scope: null
+    - children:
+      - children: *id001
+        commandName: $table->increments('id')
+        customProperties: null
+        displayName: $table->increments('id')
+        path: bundle.rb
+        scope: null
+      - children: *id001
+        commandName: $table->bigIncrements('id')
+        customProperties: null
+        displayName: $table->bigIncrements('id')
+        path: bundle.rb
+        scope: null
+      - children: *id001
+        commandName: $table->string('...')
+        customProperties: null
+        displayName: $table->string('...')
+        path: bundle.rb
+        scope: null
+      - children: *id001
+        commandName: $table->string('...', 255)
+        customProperties: null
+        displayName: $table->string('...', 255)
+        path: bundle.rb
+        scope: null
+      - children: *id001
+        commandName: $table->integer('...')
+        customProperties: null
+        displayName: $table->integer('...')
+        path: bundle.rb
+        scope: null
+      - children: *id001
+        commandName: $table->bigInteger('...')
+        customProperties: null
+        displayName: $table->bigInteger('...')
+        path: bundle.rb
+        scope: null
+      - children: *id001
+        commandName: $table->smallInteger('...')
+        customProperties: null
+        displayName: $table->smallInteger('...')
+        path: bundle.rb
+        scope: null
+      - children: *id001
+        commandName: $table->float('...')
+        customProperties: null
+        displayName: $table->float('...')
+        path: bundle.rb
+        scope: null
+      - children: *id001
+        commandName: $table->double('...', 15, 8)
+        customProperties: null
+        displayName: $table->double('...', 15, 8)
+        path: bundle.rb
+        scope: null
+      - children: *id001
+        commandName: $table->decimal('...', 5, 2)
+        customProperties: null
+        displayName: $table->decimal('...', 5, 2)
+        path: bundle.rb
+        scope: null
+      - children: *id001
+        commandName: $table->boolean('...')
+        customProperties: null
+        displayName: $table->boolean('...')
+        path: bundle.rb
+        scope: null
+      - children: *id001
+        commandName: $table->date('...')
+        customProperties: null
+        displayName: $table->date('...')
+        path: bundle.rb
+        scope: null
+      - children: *id001
+        commandName: $table->time('...')
+        customProperties: null
+        displayName: $table->time('...')
+        path: bundle.rb
+        scope: null
+      - children: *id001
+        commandName: $table->dateTime('...')
+        customProperties: null
+        displayName: $table->dateTime('...')
+        path: bundle.rb
+        scope: null
+      - children: *id001
+        commandName: $table->timestamp('...')
+        customProperties: null
+        displayName: $table->timestamp('...')
+        path: bundle.rb
+        scope: null
+      - children: *id001
+        commandName: $table->timestamp()
+        customProperties: null
+        displayName: $table->timestamp()
+        path: bundle.rb
+        scope: null
+      - children: *id001
+        commandName: $table->softDeleted()
+        customProperties: null
+        displayName: $table->softDeleted()
+        path: bundle.rb
+        scope: null
+      - children: *id001
+        commandName: $table->text('...')
+        customProperties: null
+        displayName: $table->text('...')
+        path: bundle.rb
+        scope: null
+      - children: *id001
+        commandName: $table->binary('...')
+        customProperties: null
+        displayName: $table->binary('...')
+        path: bundle.rb
+        scope: null
+      - children: *id001
+        commandName: $table->enum('...')
+        customProperties: null
+        displayName: $table->enum('...')
+        path: bundle.rb
+        scope: null
+      - children: *id001
+        commandName: '-'
+        customProperties: null
+        displayName: '-'
+        path: bundle.rb
+        scope: null
+      - children: *id001
+        commandName: nullable()
+        customProperties: null
+        displayName: nullable()
+        path: bundle.rb
+        scope: null
+      - children: *id001
+        commandName: default('...')
+        customProperties: null
+        displayName: default('...')
+        path: bundle.rb
+        scope: null
+      - children: *id001
+        commandName: unsigned()
+        customProperties: null
+        displayName: unsigned()
+        path: bundle.rb
+        scope: null
+      commandName: Adding Columns
+      customProperties: null
+      displayName: Adding Columns
+      path: bundle.rb
+      scope: null
+    - children:
+      - children: *id001
+        commandName: $table->primary('id')
+        customProperties: null
+        displayName: $table->primary('id')
+        path: bundle.rb
+        scope: null
+      - children: *id001
+        commandName: $table->primary(array())
+        customProperties: null
+        displayName: $table->primary(array())
+        path: bundle.rb
+        scope: null
+      - children: *id001
+        commandName: $table->unique('...')
+        customProperties: null
+        displayName: $table->unique('...')
+        path: bundle.rb
+        scope: null
+      - children: *id001
+        commandName: $table->index('...')
+        customProperties: null
+        displayName: $table->index('...')
+        path: bundle.rb
+        scope: null
+      commandName: Adding Indexs
+      customProperties: null
+      displayName: Adding Indexs
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: '-'
+      customProperties: null
+      displayName: '-'
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Go to Schame Handbook
+      customProperties: null
+      displayName: Go to Schame Handbook
       path: bundle.rb
       scope: null
     commandName: Schema
@@ -1039,9 +1142,9 @@ children:
       displayName: php artisan migrate
       path: bundle.rb
       scope: null
-    commandName: The_Remote_Component
+    commandName: 远程组件
     customProperties: null
-    displayName: The_Remote_Component
+    displayName: 远程组件
     path: bundle.rb
     scope: null
   - children:
@@ -1061,7 +1164,7 @@ children:
   displayName: Laravel
   path: bundle.rb
   scope: null
-- !!com.aptana.scripting.model.EnvironmentElement {customProperties: null, displayName: environment-9067a470-070a-4b39-9122-ac438e55f3cc,
+- !!com.aptana.scripting.model.EnvironmentElement {customProperties: null, displayName: environment-47a99584-f639-42d4-a304-bb8bb5b83d68,
   path: bundle.rb, scope: source.php}
 copyright: null
 customProperties: {contact_email_rot_13: xiehai@vip.qq.com}
